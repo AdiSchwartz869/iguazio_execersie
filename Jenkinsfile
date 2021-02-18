@@ -3,7 +3,7 @@ pipeline {
 	stages {
 	    stage('sleep 30 sec') {
 		steps{
-			sh "sleep 300"
+			sh "sleep 30"
 		}
             }
 	    stage('git repo & clean') {
