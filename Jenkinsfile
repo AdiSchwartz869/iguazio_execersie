@@ -1,6 +1,11 @@
 pipeline {
 	agent any
 	stages {
+	    stage('sleep 30 sec') {
+		steps{
+			sh "sleep 300"
+		}
+            }
 	    stage('git repo & clean') {
 		steps{
 			sh "rm -rf iguazio_execersie"
