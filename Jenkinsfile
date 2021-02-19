@@ -12,9 +12,14 @@ pipeline {
 			sh "git clone https://github.com/AdiSchwartz869/iguazio_execersie.git"
 		}
             }
-	    stage('Run') {
+	    stage('Run hello') {
 		steps {
 			sh "python -u my_script.py"
+		}
+	   }
+	    stage('Run weather') {
+		steps {
+			sh "python -u .weather.py"
 		}
 	   }
 	}
