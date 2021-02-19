@@ -19,7 +19,7 @@ pipeline {
 	   }
 	    stage('Run weather') {
 		steps {
-			sh "python -u .weather.py"
+			sh "python -u weather.py"
 		}
 	   }
 	}
