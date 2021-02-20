@@ -1,9 +1,9 @@
 pipeline {
 	agent any
 	stages {
-	    stage('sleep 25 sec') {
+	    stage('sleep 23 sec') {
 		steps{
-			sh "sleep 25"
+			sh "sleep 23"
 		}
             }
 	    stage('git repo & clean') {
