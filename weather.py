@@ -1,5 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+# encoding=utf8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 search = "weather in tel aviv in celsius"
 URL = "https://www.google.com/search?q=" + search
