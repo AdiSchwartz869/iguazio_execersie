@@ -7,5 +7,5 @@ URL = "https://www.google.com/search?q=" + search
 req = requests.get(URL)
 sav = BeautifulSoup(req.text, "html.parser")
 update = sav.find("div", class_ = "BNeawe").text
-result = "The current weather in Tel-Aviv is:", update
-print result.encode('utf-8')
+result = u"The current weather in Tel-Aviv is:%s" %update
+print (result)
